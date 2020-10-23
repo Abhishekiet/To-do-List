@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import Card from './Card'
 import './Coustom.css';
-import {Typography ,TextField,} from '@material-ui/core';
 
 class Container extends Component{
-    constructor(props)
-    {
-        super(props);
-    }
+    
     render(){
         const {data,deleteall,deleteitem,edititem } =this.props
        const show = data.map(item=><Card name={item.name} id={item.id} key={item.id} 
