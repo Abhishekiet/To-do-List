@@ -38,7 +38,7 @@ import {Box, Typography ,Grid, Paper} from '@material-ui/core';
   }
   edititem=(id)=>{
     const array = this.state.data.filter(item=>item.id !== id)    
-    const selected = this.state.data.find(item => item.id == id)
+    const selected = this.state.data.find(item => item.id === id)
     
     this.setState({input:selected.name , data:array ,edit:true })
        console.log(selected)
